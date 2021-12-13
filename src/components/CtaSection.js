@@ -67,7 +67,5 @@ export default class CtaSection extends React.Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
-        );
-    }
+            </    }
 }

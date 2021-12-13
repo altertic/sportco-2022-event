@@ -42,32 +42,32 @@ export default class CtaSection extends React.Component {
                 <section className={classNames('section', 'cta', { 'has-border': _.get(section, 'has_border', null), 'has-cover': _.get(section, 'background_image', null), 'bg-none': bg_color === 'none', 'bg-primary': bg_color === 'primary', 'bg-secondary': bg_color === 'secondary', 'pt-4': padding_top === 'small', 'pt-6': (padding_top === 'medium') || (padding_top === 'large'), 'pt-md-7': padding_top === 'large', 'pb-4': padding_bottom === 'small', 'pb-6': (padding_bottom === 'medium') || (padding_bottom === 'large'), 'pb-md-7': padding_bottom === 'large' })}>
                     {_.get(section, 'background_image', null) && (
                         <div className="cover-img" style={toStyleObj('background-image: url(\'' + withPrefix(_.get(section, 'background_image', null)) + '\'); opacity: ' + bg_img_opacity + '; background-size: ' + bg_img_size + '; background-repeat: ' + bg_img_repeat + '; background-position: ' + bg_img_position)}</div>
-                    )}
+                )}
                     <div className={classNames('container', { 'container--medium': is_vert })}>
-                        <div className="cta__content grid items-center">
-                            {has_text && (
-                                <div className={classNames('cta__body', 'my-1', 'cell-12', { 'cell-md-7': (is_horiz && has_actions) && (actions_width === 'fourty'), 'cell-md-6': (is_horiz && has_actions) && (actions_width === 'fifty'), 'cell-md-5': (is_horiz && has_actions) && (actions_width === 'sixty'), 'text-center': align_x === 'center', 'text-right': align_x === 'right' })}>
-                                    {_.get(section, 'title', null) && (
-                                        <h1 className="cta__title">{_.get(section, 'title', null)}</h1>
-                                    )}
-                                    {_.get(section, 'content', null) && (
-                                        <div className="cta__copy">
-                                            {markdownify(_.get(section, 'content', null))}
-                                        </div>
-                                    )}
-                                </div>
-                            )}
-                            {has_actions && (
-                                <div className={classNames('cta__actions', 'my-1', 'cell-12', { 'cell-md-5': (is_horiz && has_text) && (actions_width === 'fourty'), 'cell-md-6': (is_horiz && has_text) && (actions_width === 'fifty'), 'cell-md-7': (is_horiz && has_text) && (actions_width === 'sixty'), 'order-md-first': has_actions && (actions_pos === 'left'), 'order-first': has_actions && (actions_pos === 'top') })}>
-                                    <div className={classNames('cta__actions', 'btn-group', { 'justify-md-center': is_horiz, 'justify-center': align_x === 'center', 'justify-end': align_x === 'right' })}>
-                                        <SectionActions {...this.props} actions={_.get(section, 'actions', null)} />
+                    <div className="cta__content grid items-center">
+                        {has_text && (
+                            <div className={classNames('cta__body', 'my-1', 'cell-12', { 'cell-md-7': (is_horiz && has_actions) && (actions_width === 'fourty'), 'cell-md-6': (is_horiz && has_actions) && (actions_width === 'fifty'), 'cell-md-5': (is_horiz && has_actions) && (actions_width === 'sixty'), 'text-center': align_x === 'center', 'text-right': align_x === 'right' })}>
+                                {_.get(section, 'title', null) && (
+                                    <h1 className="cta__title">{_.get(section, 'title', null)}</h1>
+                                )}
+                                {_.get(section, 'content', null) && (
+                                    <div className="cta__copy">
+                                        {markdownify(_.get(section, 'content', null))}
                                     </div>
+                                )}
+                            </div>
+                        )}
+                        {has_actions && (
+                            <div className={classNames('cta__actions', 'my-1', 'cell-12', { 'cell-md-5': (is_horiz && has_text) && (actions_width === 'fourty'), 'cell-md-6': (is_horiz && has_text) && (actions_width === 'fifty'), 'cell-md-7': (is_horiz && has_text) && (actions_width === 'sixty'), 'order-md-first': has_actions && (actions_pos === 'left'), 'order-first': has_actions && (actions_pos === 'top') })}>
+                                <div className={classNames('cta__actions', 'btn-group', { 'justify-md-center': is_horiz, 'justify-center': align_x === 'center', 'justify-end': align_x === 'right' })}>
+                                    <SectionActions {...this.props} actions={_.get(section, 'actions', null)} />
                                 </div>
-                            )}
-                        </div>
+                            </div>
+                        )}
                     </div>
+                </div>
                 </section>
-            </React.Fragment>
+            </React.Fragment >
         );
     }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
 import _ from 'lodash';
-
-import {classNames, toStyleObj, withPrefix, htmlToReact, markdownify} from '../utils';
+import React from 'react';
+import { classNames, htmlToReact, markdownify, toStyleObj, withPrefix } from '../utils';
 import SectionActions from './SectionActions';
+
 
 export default class HeroSection extends React.Component {
     render() {

@@ -2,7 +2,7 @@
 
 <img src="https://themes.stackbit.com/images/event-demo-1024x768.png" width="600">
 
-A [Next.js](https://nextjs.org) project using [Sanity](https://www.sanity.io) as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was initially generated with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes), which demonstrated to be 
+A [Next.js](https://nextjs.org) project using [Sanity](https://www.sanity.io) as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was initially generated with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes), which demonstrated to be a 
 
 You can [create a site](https://app.stackbit.com/create?theme=https://github.com/stackbit-themes/event-unibit&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) just like this one, or explore some variations. How about a different:
 
